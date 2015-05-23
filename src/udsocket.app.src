@@ -1,0 +1,12 @@
+%% vim: set ft=erlang : -*- erlang -*-
+{application, udsocket,
+ [
+  {description, ""}, % TODO: ライブラリの概要を書く
+  {vsn, git},
+  {registered, []}, % 予め使用することが分かっているプロセス名を列挙する (もし存在するなら)
+  {applications, [ % udsocketが直接依存しているアプリケーション群を列挙する
+                  kernel,
+                  stdlib
+                 ]},
+  {env, []}
+ ]}.
